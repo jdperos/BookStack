@@ -158,6 +158,8 @@ class ImageResizer
      */
     protected function interventionFromImageData(string $imageData, ?string $fileType): InterventionImage
     {
+        echo "<script>console.log('BIG TESTOOOOOOOOO');</script>";
+
         $manager = new ImageManager(
             new Driver(),
             autoOrientation: false,
