@@ -188,6 +188,8 @@ class ImageResizer
      */
     protected function orientImageToOriginalExif(InterventionImage $image, string $originalData): void
     {
+        return;
+
         if (!extension_loaded('exif')) {
             return;
         }
