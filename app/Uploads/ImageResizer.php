@@ -158,7 +158,7 @@ class ImageResizer
      */
     protected function interventionFromImageData(string $imageData, ?string $fileType): InterventionImage
     {
-        echo "<script>console.log('BIG TESTOOOOOOOOO');</script>";
+        error_log('interventionFromImageData called with fileType: ' . $fileType);
 
         $manager = new ImageManager(
             new Driver(),
